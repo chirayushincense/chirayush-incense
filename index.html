@@ -2,63 +2,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chirayush Incense - Online Store</title>
+    <title>Chirayush Incense - Premium Incense Sticks</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <header>
-        <div class="logo">Chirayush Incense</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <input type="text" placeholder="Search for incense..." class="search-bar">
-        <div class="cart">🛒 Cart</div>
-    </header><!-- Home Section -->
-<section id="home">
-    <h1>Welcome to Chirayush Incense</h1>
-    <p>Experience the best quality incense sticks for relaxation and spirituality.</p>
+        <div class="container">
+            <div class="logo">Chirayush Incense</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Our Incense</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+            <input type="text" placeholder="Search for incense..." class="search-bar">
+            <div class="cart" onclick="openCart()">🛒 Cart (<span id="cart-count">0</span>)</div>
+        </div>
+    </header><!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Chirayush Incense</h1>
+        <p>Discover the finest incense sticks crafted for relaxation, meditation, and spiritual well-being.</p>
+        <button onclick="scrollToSection('products')">Explore Now</button>
+    </div>
 </section>
 
 <!-- Product Section -->
 <section id="products" class="products">
-    <div class="product" onclick="showDetails('rose')">
-        <img src="rose.jpg" alt="Premium Rose">
-        <h3>Premium Rose</h3>
-        <p>₹199</p>
-        <p>Used for relaxation and meditation.</p>
+    <h2>Our Premium Incense Sticks</h2>
+    <div class="product-grid">
+        <div class="product" onclick="showDetails('rose')">
+            <img src="rose.jpg" alt="Premium Rose">
+            <h3>Premium Rose</h3>
+            <p>A soothing floral aroma for a relaxing ambiance.</p>
+            <button onclick="addToCart('Premium Rose', 199)">Add to Cart</button>
+        </div>
+        <div class="product" onclick="showDetails('champa')">
+            <img src="champa.jpg" alt="Champa">
+            <h3>Champa</h3>
+            <p>Classic temple fragrance for spiritual upliftment.</p>
+            <button onclick="addToCart('Champa', 249)">Add to Cart</button>
+        </div>
+        <div class="product" onclick="showDetails('sandalwood')">
+            <img src="sandalwood.jpg" alt="Sandalwood">
+            <h3>Sandalwood</h3>
+            <p>Calming and meditative scent for focus and peace.</p>
+            <button onclick="addToCart('Sandalwood', 299)">Add to Cart</button>
+        </div>
     </div>
-    <div class="product" onclick="showDetails('champa')">
-        <img src="champa.jpg" alt="Champa">
-        <h3>Champa</h3>
-        <p>₹249</p>
-        <p>Perfect for spiritual and temple use.</p>
-    </div>
-    <div class="product" onclick="showDetails('sandalwood')">
-        <img src="sandalwood.jpg" alt="Sandalwood">
-        <h3>Sandalwood</h3>
-        <p>₹299</p>
-        <p>Promotes calmness and enhances focus.</p>
+</section>
+
+<!-- Reviews Section -->
+<section id="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review-container">
+        <div class="review">
+            <p>"Absolutely love the fragrance! Very calming." - Priya S.</p>
+        </div>
+        <div class="review">
+            <p>"Best incense sticks I have ever used." - Rohit K.</p>
+        </div>
+        <div class="review">
+            <p>"Perfect for meditation and relaxation." - Ananya M.</p>
+        </div>
     </div>
 </section>
 
 <!-- About Section -->
 <section id="about">
-    <h2>About Us</h2>
-    <p>Chirayush Incense is dedicated to providing high-quality incense sticks that promote relaxation and spiritual well-being.</p>
+    <h2>About Chirayush Incense</h2>
+    <p>We are dedicated to crafting high-quality incense sticks using natural ingredients. Our mission is to bring peace, relaxation, and positivity into your home.</p>
+</section>
+
+<!-- Login Section -->
+<section id="login">
+    <h2>Login to Your Account</h2>
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+    <p>Don't have an account? <a href="#signup">Sign Up</a></p>
 </section>
 
 <!-- Contact Section -->
 <footer id="contact">
-    <h3>Contact Us</h3>
-    <p>📞 Phone: +91 9902652495</p>
-    <p>📧 Email: chirayushincense@gmail.com</p>
+    <h2>Contact Us</h2>
+    <p>📞 Phone: +91 98765 43210</p>
+    <p>📧 Email: support@chirayushincense.com</p>
     <p>📍 Location: Bengaluru, India</p>
 </footer>
 
