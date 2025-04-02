@@ -1,35 +1,31 @@
-/* Global Styles */ body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #f3e7e9, #e3eeff); color: #333; }
+/* Updated CSS for Chirayush Incense Website */
 
-.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+/* Global Styles / body { font-family: 'Poppins', sans-serif; background-color: #1E1E1E; / Dark luxurious background / color: #F5F5F5; / Light text for contrast */ margin: 0; padding: 0; }
 
-/* Header with Glassmorphism */ header { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+/* Navbar / .navbar { background: #8B0000; / Deep red premium color */ padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
 
-header .logo { font-size: 26px; font-weight: bold; letter-spacing: 2px; }
+.navbar a { color: #FFFFFF; text-decoration: none; font-size: 18px; margin: 0 15px; transition: color 0.3s; }
 
-nav ul { list-style: none; display: flex; gap: 20px; }
+.navbar a:hover { color: #FFD700; /* Gold effect */ }
 
-nav ul li a { text-decoration: none; color: white; font-weight: bold; transition: 0.3s; }
+/* Hero Section */ .hero { text-align: center; padding: 80px 20px; background: url('https://source.unsplash.com/1600x900/?incense,spiritual') no-repeat center center/cover; color: white; font-size: 24px; font-weight: bold; }
 
-nav ul li a:hover { color: #ff4b5c; }
+.hero h1 { font-size: 48px; font-weight: bold; color: #FFD700; /* Golden heading */ }
 
-/* Hero Section */ .hero { text-align: center; padding: 150px 20px; background: url('incense-bg.jpg') no-repeat center center/cover; color: white; animation: fadeIn 1.5s ease-in-out; }
+.hero p { font-size: 18px; margin-top: 10px; }
 
-.hero button { padding: 12px 25px; border: none; background: linear-gradient(135deg, #ff4b5c, #ff6b81); color: white; cursor: pointer; font-size: 18px; border-radius: 8px; transition: 0.3s; }
+/* Button */ .button { background-color: #FFD700; color: #8B0000; padding: 12px 24px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
 
-.hero button:hover { transform: scale(1.1); }
+.button:hover { background-color: #FF6347; color: white; }
 
-/* Product Section with Neumorphism */ .products { padding: 50px 20px; text-align: center; }
+/* Products Section */ .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 40px; gap: 20px; }
 
-.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 20px 0; }
+.product-card { background: #2E2E2E; padding: 20px; border-radius: 10px; text-align: center; width: 280px; box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); transition: transform 0.3s; }
 
-.product { background: linear-gradient(145deg, #ffffff, #e6e6e6); box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; padding: 20px; border-radius: 15px; transition: all 0.3s ease-in-out; }
+.product-card:hover { transform: scale(1.05); }
 
-.product:hover { transform: translateY(-5px); box-shadow: 10px 10px 20px #c5c5c5, -10px -10px 20px #ffffff; }
+.product-card img { width: 100px; height: 100px; }
 
-.product img { width: 100%; border-radius: 10px; }
+.product-card h3 { color: #FFD700; font-size: 22px; }
 
-/* Smooth Animations */ @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-/* Footer */ footer { text-align: center; padding: 20px; background: rgba(0, 0, 0, 0.8); color: white; margin-top: 20px; border-radius: 10px; }
-
-/* JavaScript for Smooth Scroll */ scripts.js: document.addEventListener("DOMContentLoaded", function () { document.querySelector(".hero button").addEventListener("click", function () { document.querySelector("#products").scrollIntoView({ behavior: "smooth" }); }); });
+/* Footer */ .footer { background: #8B0000; color: white; text-align: center; padding: 20px; }
