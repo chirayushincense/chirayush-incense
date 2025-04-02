@@ -1,81 +1,48 @@
-<!DOCTYPE html><html lang="en">
-<head><link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chirayush Incense</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            text-align: center;
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function showDescription(id) {
+            // Hide all descriptions
+            let descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(desc => desc.style.display = 'none');
+            
+            // Show selected description
+            document.getElementById(id).style.display = 'block';
         }
-        header {
-            background-color: #8b4513;
-            color: white;
-            padding: 15px;
-            font-size: 24px;
-        }
-        section {
-            padding: 20px;
-        }
-        .product {
-            display: inline-block;
-            width: 30%;
-            margin: 15px;
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #8b4513;
-            color: white;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    </script>
 </head>
-<body><nav class="navbar">
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to Chirayush Incense</h1>
+        <p>Explore our premium incense sticks</p>
+    </header>
+
+    <!-- Incense Buttons -->
     <div class="container">
-        <a href="#" class="logo">Chirayush Incense</a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <button class="btn" onclick="showDescription('rose')">Premium Rose</button>
+        <button class="btn" onclick="showDescription('champa')">Champa</button>
+        <button class="btn" onclick="showDescription('sandalwood')">Sandalwood</button>
+        <button class="btn" onclick="showDescription('lavender')">Lavender</button>
+        <button class="btn" onclick="showDescription('jasmine')">Jasmine</button>
+        <button class="btn" onclick="showDescription('pineapple')">Pineapple</button>
     </div>
-</nav>
-    <header>Chirayush Incense</header>
-    <section>
-        <h2>Welcome to Chirayush Incense</h2>
-        <p>Experience the divine aroma of our handcrafted incense sticks.</p>
-    </section>
-    <section>
-        <h2>Our Products</h2>
-        <div class="product">
-            <h3>Sandalwood Incense</h3>
-            <p>Rich and soothing fragrance for peace and relaxation.</p>
-        </div>
-        <div class="product">
-            <h3>Rose Incense</h3>
-            <p>A sweet floral scent to uplift your spirit.</p>
-        </div>
-        <div class="product">
-            <h3>Lavender Incense</h3>
-            <p>Calming lavender for stress relief and relaxation.</p>
-        </div>
-    </section>
-    <section>
-        <h2>Contact Us</h2>
-        <p>Email: chirayushincense@gmail.com</p>
-        <p>Phone: +91 9902652495</p>
-    </section>
-    <footer>
-        &copy; 2025 Chirayush Incense. All rights reserved.
-    </footer>
+
+    <!-- Incense Descriptions -->
+    <div class="container">
+        <p id="rose" class="description">🌹 **Premium Rose Incense** – A luxurious floral scent that brings romance and relaxation to your space.</p>
+        <p id="champa" class="description">🌼 **Champa Incense** – A rich, earthy aroma with hints of honey and floral notes, perfect for meditation.</p>
+        <p id="sandalwood" class="description">🌳 **Sandalwood Incense** – A deep, woody fragrance that promotes calmness, clarity, and spiritual growth.</p>
+        <p id="lavender" class="description">💜 **Lavender Incense** – A soothing scent known for its calming and sleep-inducing properties.</p>
+        <p id="jasmine" class="description">🌸 **Jasmine Incense** – A sweet and sensual fragrance that uplifts the mood and relieves stress.</p>
+        <p id="pineapple" class="description">🍍 **Pineapple Incense** – A refreshing tropical scent that energizes and brings a fruity delight to your surroundings.</p>
+    </div>
+
 </body>
 </html>
