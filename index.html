@@ -1,48 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chirayush Incense</title>
+    <title>Chirayush Incense - Online Store</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function showDescription(id) {
-            // Hide all descriptions
-            let descriptions = document.querySelectorAll('.description');
-            descriptions.forEach(desc => desc.style.display = 'none');
-            
-            // Show selected description
-            document.getElementById(id).style.display = 'block';
-        }
-    </script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- Header -->
+    <!-- Navigation Bar -->
     <header>
-        <h1>Welcome to Chirayush Incense</h1>
-        <p>Explore our premium incense sticks</p>
-    </header>
+        <div class="logo">Chirayush Incense</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search for incense..." class="search-bar">
+        <div class="cart">🛒 Cart</div>
+    </header><!-- Home Section -->
+<section id="home">
+    <h1>Welcome to Chirayush Incense</h1>
+    <p>Experience the best quality incense sticks for relaxation and spirituality.</p>
+</section>
 
-    <!-- Incense Buttons -->
-    <div class="container">
-        <button class="btn" onclick="showDescription('rose')">Premium Rose</button>
-        <button class="btn" onclick="showDescription('champa')">Champa</button>
-        <button class="btn" onclick="showDescription('sandalwood')">Sandalwood</button>
-        <button class="btn" onclick="showDescription('lavender')">Lavender</button>
-        <button class="btn" onclick="showDescription('jasmine')">Jasmine</button>
-        <button class="btn" onclick="showDescription('pineapple')">Pineapple</button>
+<!-- Product Section -->
+<section id="products" class="products">
+    <div class="product" onclick="showDetails('rose')">
+        <img src="rose.jpg" alt="Premium Rose">
+        <h3>Premium Rose</h3>
+        <p>₹199</p>
+        <p>Used for relaxation and meditation.</p>
     </div>
+    <div class="product" onclick="showDetails('champa')">
+        <img src="champa.jpg" alt="Champa">
+        <h3>Champa</h3>
+        <p>₹249</p>
+        <p>Perfect for spiritual and temple use.</p>
+    </div>
+    <div class="product" onclick="showDetails('sandalwood')">
+        <img src="sandalwood.jpg" alt="Sandalwood">
+        <h3>Sandalwood</h3>
+        <p>₹299</p>
+        <p>Promotes calmness and enhances focus.</p>
+    </div>
+</section>
 
-    <!-- Incense Descriptions -->
-    <div class="container">
-        <p id="rose" class="description">🌹 **Premium Rose Incense** – A luxurious floral scent that brings romance and relaxation to your space.</p>
-        <p id="champa" class="description">🌼 **Champa Incense** – A rich, earthy aroma with hints of honey and floral notes, perfect for meditation.</p>
-        <p id="sandalwood" class="description">🌳 **Sandalwood Incense** – A deep, woody fragrance that promotes calmness, clarity, and spiritual growth.</p>
-        <p id="lavender" class="description">💜 **Lavender Incense** – A soothing scent known for its calming and sleep-inducing properties.</p>
-        <p id="jasmine" class="description">🌸 **Jasmine Incense** – A sweet and sensual fragrance that uplifts the mood and relieves stress.</p>
-        <p id="pineapple" class="description">🍍 **Pineapple Incense** – A refreshing tropical scent that energizes and brings a fruity delight to your surroundings.</p>
-    </div>
+<!-- About Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Chirayush Incense is dedicated to providing high-quality incense sticks that promote relaxation and spiritual well-being.</p>
+</section>
+
+<!-- Contact Section -->
+<footer id="contact">
+    <h3>Contact Us</h3>
+    <p>📞 Phone: +91 98765 43210</p>
+    <p>📧 Email: support@chirayushincense.com</p>
+    <p>📍 Location: Bengaluru, India</p>
+</footer>
 
 </body>
 </html>
