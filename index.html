@@ -3,140 +3,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chirayush Incense</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #FFD700;
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: black;
-        }
-        header {
-            background-color: black;
-            color: yellow;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-        nav ul li a {
-            color: yellow;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .btn {
-            background-color: black;
-            color: yellow;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .products {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .product-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-            padding: 20px;
-        }
-        .product {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            width: 250px;
-            text-align: center;
-        }
-        .product h3 {
-            font-size: 22px;
-            color: black;
-        }
-        .product p {
-            font-size: 16px;
-            color: #333;
-        }
-        footer {
-            background-color: black;
-            color: yellow;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 18px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Chirayush Incense</h1>
+        <div class="logo">Chirayush Incense</div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#products">Our Incense</a></li>
+                <li><a href="#products">Products</a></li>
                 <li><a href="#about">About Us</a></li>
-                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header><section id="home" class="hero">
-    <h2>Welcome to Chirayush Incense</h2>
-    <p>Premium handcrafted incense sticks for a divine experience.</p>
-    <a href="#products" class="btn">Explore Now</a>
+    <h1>Welcome to Chirayush Incense</h1>
+    <p>Experience the finest fragrances with our premium incense sticks.</p>
+    <button onclick="scrollToSection('products')">Explore Our Products</button>
 </section>
 
 <section id="products" class="products">
-    <h2>Our Premium Incense Sticks</h2>
+    <h2>Our Products</h2>
     <div class="product-grid">
         <div class="product">
-            <h3>Premium Rose</h3>
-            <p>A soothing floral aroma for relaxation.</p>
+            <img src="rose.jpg" alt="Premium Rose Incense">
+            <h3>Premium Rose Incense</h3>
+            <p>Soothing floral aroma to refresh your senses.</p>
         </div>
         <div class="product">
-            <h3>Champa</h3>
-            <p>Classic temple fragrance for spiritual upliftment.</p>
+            <img src="champa.jpg" alt="Champa Incense">
+            <h3>Champa Incense</h3>
+            <p>Traditional fragrance for a calming atmosphere.</p>
         </div>
         <div class="product">
-            <h3>Sandalwood</h3>
-            <p>Calming and meditative woody fragrance.</p>
+            <img src="sandalwood.jpg" alt="Sandalwood Incense">
+            <h3>Sandalwood Incense</h3>
+            <p>Classic woody scent for meditation and relaxation.</p>
         </div>
         <div class="product">
-            <h3>Lavender</h3>
-            <p>Refreshing and therapeutic floral scent.</p>
-        </div>
-        <div class="product">
-            <h3>Jasmine</h3>
-            <p>Sweet and romantic floral fragrance.</p>
-        </div>
-        <div class="product">
-            <h3>Pineapple</h3>
-            <p>Exotic and fruity aroma for freshness.</p>
+            <img src="lavender.jpg" alt="Lavender Incense">
+            <h3>Lavender Incense</h3>
+            <p>Relaxing floral scent to soothe your mind.</p>
         </div>
     </div>
 </section>
 
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>Chirayush Incense is dedicated to bringing high-quality incense sticks made with natural ingredients, crafted to enhance your spiritual and aromatic experiences.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@chirayushincense.com</p>
+    <p>Phone: +91-9876543210</p>
+</section>
+
 <footer>
-    <p>Contact us: +91 9902652495  | chirayushincense@gmail.com</p>
+    <p>&copy; 2025 Chirayush Incense. All rights reserved.</p>
 </footer>
 
 </body>
