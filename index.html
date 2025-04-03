@@ -1,30 +1,49 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chirayush Incense</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #f5f5dc;
+            background: linear-gradient(to right, #f9d423, #ff4e50);
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
         header {
-            background: linear-gradient(to right, #ff9966, #ff5e62);
+            background: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: white;
-            font-size: 18px;
+            color: #ffcc00;
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            color: #fff;
+            transform: scale(1.1);
         }
         section {
-            padding: 50px;
+            padding: 100px 50px;
+            margin-top: 60px;
+            color: white;
         }
         .products {
             display: flex;
@@ -33,43 +52,59 @@
             gap: 20px;
         }
         .product {
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            width: 280px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product:hover {
+            transform: scale(1.1) rotate(2deg);
         }
         .product img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 15px;
         }
         form {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 300px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            width: 350px;
             margin: auto;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            animation: slideUp 1s ease-in-out;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
         }
         input, textarea {
             width: 100%;
-            margin-bottom: 10px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
         }
         button {
-            background-color: #ff5e62;
-            color: white;
-            padding: 10px;
+            background-color: #ffcc00;
+            color: black;
+            padding: 12px;
             border: none;
-            border-radius: 5px;
+            border-radius: 10px;
             cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #ff4e50;
+            color: white;
+            transform: scale(1.05);
         }
         footer {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.8);
             color: white;
-            padding: 10px;
+            padding: 15px;
             position: relative;
             bottom: 0;
             width: 100%;
@@ -85,52 +120,21 @@
             <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header><section id="home">
-    <h2>Welcome to Chirayush Incense</h2>
-    <p>Discover the finest incense sticks crafted with care.</p>
-</section>
-
-<section id="products">
-    <h2>Our Products</h2>
-    <div class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Incense Stick 1">
-            <h3>Lavender Bliss</h3>
-            <p>Relaxing lavender-scented incense sticks.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Incense Stick 2">
-            <h3>Rose Harmony</h3>
-            <p>Beautiful rose fragrance for a peaceful ambiance.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/250" alt="Incense Stick 3">
-            <h3>Sandalwood Essence</h3>
-            <p>Traditional sandalwood aroma for meditation.</p>
-        </div>
-    </div>
-</section>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>We are committed to providing high-quality incense sticks for a peaceful ambiance.</p>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-    <p>Email: info@chirayush.com</p>
-    <p>Phone: +91 XXXXXXXXXX</p>
-</section>
-
-<footer>
-    &copy; 2025 Chirayush Incense. All rights reserved.
-</footer>
-
-</body>
-</html>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Chirayush Incense</h2>
+        <p>Discover the finest incense sticks crafted with care.</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/280" alt="Incense Stick 1">
+                <h3>Lavender Bliss</h3>
+                <p>Relaxing lavender-scented incense sticks.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/280" alt="Incense Stick 2">
+                <h3>Rose Harmony</h3>
