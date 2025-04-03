@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chirayush Premium Incense</title>
+    <title>Chirayush Incense</title>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -39,22 +39,22 @@
             padding: 100px 50px;
             margin-top: 80px;
         }
-        .products {
+        .products, .specifications {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
         }
-        .product {
+        .product, .spec-box {
             background: white;
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            width: 280px;
+            width: 300px;
             transition: transform 0.3s ease-in-out;
         }
-        .product:hover {
-            transform: scale(1.1);
+        .product:hover, .spec-box:hover {
+            transform: scale(1.05);
         }
         form {
             background: white;
@@ -104,6 +104,7 @@
         <nav>
             <a href="#home">Home</a>
             <a href="#products">Products</a>
+            <a href="#specifications">Specifications</a>
             <a href="#about">About Us</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -115,25 +116,36 @@
 <section id="products">
     <h2>Our Products</h2>
     <div class="products">
-        <div class="product">
-            <h3>Lavender Bliss</h3>
-            <p>Relaxing lavender-scented incense sticks.</p>
+        <div class="product"><h3>Lavender Bliss</h3><p>Relaxing lavender-scented incense sticks.</p></div>
+        <div class="product"><h3>Rose Harmony</h3><p>Beautiful rose fragrance for a peaceful ambiance.</p></div>
+        <div class="product"><h3>Sandalwood Essence</h3><p>Traditional sandalwood aroma for meditation.</p></div>
+        <div class="product"><h3>Pineapple Delight</h3><p>Sweet and tropical pineapple-scented incense.</p></div>
+        <div class="product"><h3>Jasmine Bloom</h3><p>Floral and fresh jasmine incense sticks.</p></div>
+    </div>
+</section>
+
+<section id="specifications">
+    <h2>Common Specifications of Our Incense Sticks</h2>
+    <div class="specifications">
+        <div class="spec-box">
+            <h3>Dimensions</h3>
+            <p><b>Length:</b> 9 inches</p>
+            <p><b>Thickness:</b> Usually 2mm–5mm</p>
         </div>
-        <div class="product">
-            <h3>Rose Harmony</h3>
-            <p>Beautiful rose fragrance for a peaceful ambiance.</p>
+        <div class="spec-box">
+            <h3>Composition</h3>
+            <p><b>Core Material:</b> Bamboo sticks</p>
+            <p><b>Base Material:</b> Charcoal, wood powder, joss powder (gum)</p>
+            <p><b>Essential Oils & Fragrances:</b> Dep oil, natural fragrances like sandalwood, lavender, jasmine, rose, pineapple, mogra, Lux, etc.</p>
+            <p><b>Binder:</b> Natural gums (e.g., Jigat, joss powder)</p>
         </div>
-        <div class="product">
-            <h3>Sandalwood Essence</h3>
-            <p>Traditional sandalwood aroma for meditation.</p>
+        <div class="spec-box">
+            <h3>Burning Time</h3>
+            <p>30–45 minutes</p>
         </div>
-        <div class="product">
-            <h3>Pineapple Delight</h3>
-            <p>Sweet and tropical pineapple-scented incense.</p>
-        </div>
-        <div class="product">
-            <h3>Jasmine Bloom</h3>
-            <p>Floral and fresh jasmine incense sticks.</p>
+        <div class="spec-box">
+            <h3>Types</h3>
+            <p>Charcoal-based incense, soaked scented oils, and masala incense (loban), made from dry ground ingredients.</p>
         </div>
     </div>
 </section>
